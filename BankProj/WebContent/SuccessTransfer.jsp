@@ -28,7 +28,7 @@
 <h4>SUCCESSFUL TRANSFER</h4>
 
 <p>
- <% out.println(session.getAttribute("name")); %>SENT $ <% out.println(session.getAttribute("transamount")); %>TO ACCOUNT NUMBER <% out.println(session.getAttribute("raccno")); %>
+ <% out.println(session.getAttribute("name")); %>SENT $ <% out.println(session.getAttribute("transamount")); %>
 </p>
 
 </div>

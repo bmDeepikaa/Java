@@ -41,8 +41,13 @@ protected void service(HttpServletRequest req, HttpServletResponse resp) throws 
 	int accno = (int) session.getAttribute("accno");
 	String name=(String) session.getAttribute("name");
 	String email=(String) session.getAttribute("email");
+	Double curbalance=(Double) session.getAttribute("balance");
+    Double transamount1 = (Double.parseDouble(transamount));
+	Double balance=curbalance-transamount1;
+
 	session.setAttribute("raccno", accno);
 	session.setAttribute("transamount", transamount);
+	session.setAttribute("balance", balance);
 
 
 	//set the methods for model class to retrieve from

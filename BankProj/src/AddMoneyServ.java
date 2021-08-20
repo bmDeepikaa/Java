@@ -43,7 +43,7 @@ public class AddMoneyServ extends HttpServlet {
 		int accno= (int) session.getAttribute("accno");
 		String pwd= (String) session.getAttribute("pwd");
 		String email=(String) session.getAttribute("email");
-		
+		session.setAttribute("balance", balance);
 		//set for the model to use in query
 		m.setName(name);
 		m.setPwd(pwd);
