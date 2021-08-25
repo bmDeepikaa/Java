@@ -1,0 +1,17 @@
+<br>
+<br>
+<div class="container">
+    <BR>
+    <h1>UPDATE BOOK </h1>
+  
+    <form (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label class="form-label">ISBN/SERIAL NO</label>
+        <input type="number" class="form-control" id="serial" name="serial" [(ngModel)]="book.serial" required minlength="4">
+      </div>
+     
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+  
